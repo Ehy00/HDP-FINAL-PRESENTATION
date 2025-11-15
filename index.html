@@ -62,18 +62,19 @@
             }
         }
 
-        /* Slide 1 - Title with Menu */
+        /* Slide 1 - Title with Menu - UPDATED */
         .title-slide {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
+            padding: 40px 60px !important;
         }
 
         .title-slide h1 {
-            font-size: 4.5em;
-            margin-bottom: 25px;
+            font-size: 3.5em;
+            margin-bottom: 15px;
             background: linear-gradient(135deg, #FF6B00 0%, #F96302 50%, #FF8C00 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -83,42 +84,48 @@
         }
 
         .title-slide .subtitle {
-            font-size: 2em;
-            margin-bottom: 50px;
+            font-size: 1.5em;
+            margin-bottom: 20px;
             color: #cccccc;
         }
 
         .author-info {
-            margin-top: 50px;
-            padding: 40px;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 20px 40px;
             background: rgba(255, 107, 0, 0.1);
-            border-radius: 15px;
+            border-radius: 10px;
             border: 2px solid rgba(255, 107, 0, 0.3);
         }
 
         .author-info p {
-            font-size: 1.5em;
-            margin: 12px 0;
+            font-size: 1.1em;
+            margin: 5px 0;
         }
 
-        /* Menu Grid */
+        /* Menu Grid - UPDATED */
         .menu-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            margin-top: 50px;
+            gap: 30px;
+            margin-top: 30px;
             width: 100%;
-            max-width: 900px;
+            max-width: 1200px;
         }
 
         .menu-item {
-            padding: 30px;
+            padding: 40px 35px;
             background: linear-gradient(135deg, rgba(255, 107, 0, 0.2) 0%, rgba(255, 181, 0, 0.2) 100%);
             border: 2px solid #FF6B00;
             border-radius: 15px;
             cursor: pointer;
             transition: all 0.3s ease;
-            text-align: left;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 220px;
         }
 
         .menu-item:hover {
@@ -128,20 +135,20 @@
         }
 
         .menu-item .number {
-            font-size: 2.5em;
+            font-size: 3em;
             color: #FF6B00;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         .menu-item h3 {
-            font-size: 1.8em;
+            font-size: 2em;
             color: #FFB500;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         .menu-item p {
-            font-size: 1.1em;
+            font-size: 1.2em;
             color: #cccccc;
             line-height: 1.5;
         }
@@ -509,14 +516,13 @@
     <div class="slide-counter" id="slideCounter">1 / 6</div>
 
     <div class="slide-container">
-        <!-- Slide 1: Title with Navigation Menu -->
+        <!-- Slide 1: Title with Navigation Menu - UPDATED -->
         <div class="slide active title-slide">
             <h1>Crisis Readiness Enhancement Strategy</h1>
             <p class="subtitle">Strengthening Disaster Preparedness Through Competitive Intelligence</p>
             <div class="author-info">
                 <p><strong>Created by: Ayomide Braimoh</strong></p>
-                <p>Major: Computer Science</p>
-                <p>Alabama A&M University</p>
+                <p>Major: Computer Science | Alabama A&M University</p>
             </div>
 
             <div class="menu-grid">
@@ -541,12 +547,12 @@
                     <p>Implementation roadmap</p>
                 </div>
             </div>
-            <div style="margin-top: 30px; text-align: center; color: #FFB500; font-size: 1.2em;">
+            <div style="margin-top: 25px; text-align: center; color: #FFB500; font-size: 1.15em;">
                 Click any section above or use navigation buttons below
             </div>
         </div>
 
-        <!-- Slide 2: Situation -->
+        <!-- Slide 2: Situation - UNCHANGED -->
         <div class="slide situation-slide">
             <h2>Situation: Industry Leadership in Crisis Management</h2>
             <p style="font-size: 1.1em; margin-bottom: 15px; line-height: 1.5;">In the retail and logistics sectors, disaster preparedness is critical for business continuity, customer safety, and community resilience. Three industry leaders demonstrate distinct approaches to crisis readiness.</p>
@@ -586,7 +592,7 @@
             <p style="margin-top: 20px; font-size: 1em; color: #FFB500;"><strong>Key Partnerships:</strong> American Red Cross, FEMA, UNICEF USA, CARE</p>
         </div>
 
-        <!-- Slide 3: Complication -->
+        <!-- Slide 3: Complication - UNCHANGED -->
         <div class="slide complication-slide">
             <h2>Complication: Critical Gaps in Home Depot's Crisis Response</h2>
             
@@ -621,7 +627,7 @@
             </div>
         </div>
 
-        <!-- Slide 4: Resolution -->
+        <!-- Slide 4: Resolution - UNCHANGED -->
         <div class="slide resolution-slide">
             <h2>Resolution: Integrated Crisis Readiness System</h2>
             
@@ -664,7 +670,7 @@
             <p style="margin-top: 30px; font-size: 1.1em; background: rgba(255, 181, 0, 0.2); padding: 20px; border-radius: 10px; border-left: 4px solid #FFB500;"><strong>Expected Outcomes:</strong> 40% faster crisis response times, 25% improvement in customer satisfaction during disasters, $15M annual savings through optimized logistics, and industry recognition as the crisis readiness leader in retail.</p>
         </div>
 
-        <!-- Slide 5: Call to Action -->
+        <!-- Slide 5: Call to Action - UNCHANGED -->
         <div class="slide cta-slide">
             <h2>Call to Action: Implementation Roadmap</h2>
             
@@ -699,7 +705,7 @@
             </div>
         </div>
 
-        <!-- Slide 6: Summary -->
+        <!-- Slide 6: Summary - UNCHANGED -->
         <div class="slide summary-slide">
             <h2>Strategic Impact: Building the Future of Crisis Readiness</h2>
             
